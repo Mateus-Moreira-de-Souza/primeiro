@@ -1,0 +1,407 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    overflow-x: hidden;
+}
+
+.header1 {
+    width: 15%;
+    height: 100vh;
+    background: #000;
+    position: sticky;
+    top: 0;
+    padding: 30px;
+    font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.logo a{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+ul{
+    color: white;
+    margin-top: 40px;
+    display: block;
+    list-style: none;
+    padding: 0;
+    font-size: 13px;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #df0e62;
+}
+
+.sociais{
+    padding: 0;
+    margin-top: 30px;
+}
+
+section{
+    background-image: url(https://preview.colorlib.com/theme/elit/images/img_9.jpg.webp);
+    background-size: 100%;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.welcome{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: brightness(50%);
+    color: white;
+    width: 100%;
+}
+
+.welcome h1{
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+}
+
+.welcome p{
+    width: 60%;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.welcome a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    width: 163px;
+    height: 53px;
+    background-color: #df0e62;
+    text-align: center;
+    border-radius: 30px;
+    line-height: 53px;
+    font-weight: 700;
+    margin-top: 30px;
+	transition: background-color 0.3s; 
+}
+
+.welcome a:hover {
+    background-color: #b50c50;
+}
+
+#imagens{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    row-gap: 6px;
+    width: 100%;
+}
+
+#imagens div{
+    width: 33%;
+    height: 300px;
+    overflow: hidden;
+}
+
+#imagens img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#section-testimonial {
+    padding: 7em 0;
+    background-color: #000;
+    width: 100%;
+    background-size: 100%;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    height: 700px;
+    font-family: "Oswald", sans-serif;
+}
+
+#testimonial {
+    color: white;
+    width: 80%; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    position: relative;
+    padding: 3em 3em;
+	padding-bottom: 200px;
+}
+.testimonial-content {
+    display: none;
+}
+
+.testimonial-content.active {
+    display: block;
+}
+
+.Jean-smith {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border-radius: 100px;
+}
+
+h2 {
+    font-size: 4rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+}
+
+.dots {
+    margin-top: 20px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #b50c50;
+}
+
+.nav-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.nav-button {
+	display: flex;
+    background: rgba(255, 255, 255, 0.15);
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+	justify-content: center;
+	align-items: center;
+}
+
+.biography-section {
+    background-color: #1A1A1A;
+    color: #fff;
+    padding: 50px 0;
+    font-family: "Oswald", sans-serif;
+}
+
+.biography-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.biography-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.biography-text h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.biography-text img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.biography-text h3 {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.biography-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.biography-text ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.biography-text li {
+    width: 45%;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.biography-text li::before {
+    content: '✔';
+    color: green;
+    margin-right: 10px;
+}
+
+#blog-section {
+    width: 100%;
+    padding: 5%;
+    background: #000;
+    color: #fff;
+	font-family: "Oswald", sans-serif;
+	
+}
+
+#blog-section h2 {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.blog-post {
+    display: flex;
+    margin-bottom: 2%;
+    padding: 0.5em 10em;
+}
+
+.blog-post img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.blog-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-content h3 {
+    margin: 0;
+}
+
+.blog-content p {
+    margin: 5px 0;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.page {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 5px;
+    color: #df0e62;
+    cursor: pointer;
+}
+
+#contact-section {
+    width: 100%;
+    padding: 5% 0;
+    background: #1a1a1a;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	font-family: "Oswald", sans-serif;
+}
+
+.lFormulario {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+	font-family: "Oswald", sans-serif;
+}
+
+.formulario {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    background: #333;
+    color: #fff;
+	font-family: "Oswald", sans-serif;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-color: #df0e62;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+.message-botao {
+    padding: 10px 20px;
+    background: #df0e62;
+    color: #fff;
+    cursor: pointer;
+	text-decoration: none;
+}
+a .message-botao{
+	text-decoration: none;
+}
+
+.message-botao:hover {
+	color: #fff;
+    background-color: #b50c50;
+}
+
+footer {
+    background: #111;
+    color: #777;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+	font-family: "Oswald", sans-serif;
+}
+
+footer span {
+    color: #df0e62;
+}
